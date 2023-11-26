@@ -1,4 +1,4 @@
-import random
+import random;
 
 l1=[12,43,56.45,"hello",34,'R']
 

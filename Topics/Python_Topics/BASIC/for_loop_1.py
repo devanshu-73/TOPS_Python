@@ -5,7 +5,7 @@
         stop will be excluded
 
 
-    range(1,10)
+    range(1,10) goes from 1 to 9
 
     range(10): goes from 0 to 9
         defaultly range will starts from 0
