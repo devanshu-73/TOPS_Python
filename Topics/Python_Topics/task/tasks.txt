@@ -1,0 +1,27 @@
+task :1
+WAP to swap two numbers 
+a=23
+b=4
+
+a=4
+b=23
+
+task : 2
+WAP to take input from user in terms of days and find month 
+
+days=365
+months=12
+
+task :3: Find avg electricity bill
+1: 15$
+2: 10$
+3: 14$
+
+avg : ?
+
+task : 4: WAP to find periferi of circle
+
+formula : 2*pi*r
+
+pi=3.14
+r : radius

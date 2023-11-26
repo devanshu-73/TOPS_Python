@@ -1,0 +1,9 @@
+
+task : 1
+l1=[]
+declare a blank list and populate with 10 user input
+
+
+WAP to remove duplicate elements
+
+unique_list=[]
