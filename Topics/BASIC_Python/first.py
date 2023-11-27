@@ -6,7 +6,6 @@ Num = 90.34
 NuM ="Hello"
 
 # print(num)
-
 # print(type(num))
 # print(Num)
 # print(type(Num))
