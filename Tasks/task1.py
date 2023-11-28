@@ -59,11 +59,11 @@
 
 # Task 9:
 
-for i in range(1,5):
-    for j in range(1,5):
-        if(j%2 == 0):
-            print("0")
-        else:
-            print("1")
+# for i in range(1,5):
+#     for j in range(1,5):
+#         if(j%2 == 0):
+#             print("0")
+#         else:
+#             print("1")
     
 
