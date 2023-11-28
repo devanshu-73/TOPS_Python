@@ -33,7 +33,6 @@ for i in range(5):
             print("0",end=" ")
     print()
     
-
 # for i in range(1,6):
 #     row_values = " ".join("0" if (i + j) % 2 == 0 else "1" for j in range(i))
 #     print(row_values)
