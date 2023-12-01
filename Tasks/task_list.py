@@ -1,3 +1,3 @@
-# list Task ; odd even counting
+# list Task-1 ; odd even counting
 
-# reverse the string without sort() method sort (reverse = True)
+# list task-2 : reverse the string without sort() method sort (reverse = True)
