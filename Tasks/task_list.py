@@ -40,5 +40,5 @@
 # =============================================================
 # solution : 3
 str1 = "hello world"
-str2 = reversed(str1)
+str2 = ''.join(reversed(str1))
 print(str2)
