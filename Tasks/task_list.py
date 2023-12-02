@@ -22,7 +22,15 @@
 
 # list task-2 : reverse the string without sort() method sort (reverse = True)
 
+# =============================================================
+# solution : 1
 str1 = "hello world"
 str2 = str1[::-1]
 
 print(str2)
+# =============================================================
+# solution : 2
+
+# str1 = "hello world"
+# for i in str1:
+    
