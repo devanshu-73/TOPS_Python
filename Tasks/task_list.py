@@ -31,9 +31,14 @@
 # =============================================================
 # solution : 2
 
-str1 = "hello world"
-str2 =""
-for i in str1:
-    str2 = str2+i
-print(str2)
+# str1 = "hello world"
+# str2 =""
+# for i in str1:
+    # str2 = str2+i
+# print(str2)
     
+# =============================================================
+# solution : 3
+str1 = "hello world"
+str2 = reversed(str1)
+print(str2)
