@@ -24,13 +24,16 @@
 
 # =============================================================
 # solution : 1
-str1 = "hello world"
-str2 = str1[::-1]
+# str1 = "hello world"
+# str2 = str1[::-1]
 
-print(str2,type(str2))
+# print(str2,type(str2))
 # =============================================================
 # solution : 2
 
-# str1 = "hello world"
-# for i in str1:
+str1 = "hello world"
+str2 =""
+for i in str1:
+    str2 = str2+i
+print(str2)
     
