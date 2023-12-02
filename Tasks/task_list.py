@@ -3,3 +3,16 @@
 # list task-2 : reverse the string without sort() method sort (reverse = True)
 
 
+# task-1 :
+l1 = []
+n = int(input("enter n : "))
+for i in range(n):
+    num = int(input(f"enter number {i+1} : "))
+    l1.append(num)
+    
+    
+for i in range(10):
+    if l1[i]%2 == 0 :
+        even
+# for i in range(10):
+#     print(f"num {i} :",l1[i])
