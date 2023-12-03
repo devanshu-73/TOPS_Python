@@ -1,0 +1,31 @@
+lucky_num = 45
+
+now user have only 5 chances to guess the num
+
+Guess a num between 1 to 50: 36 
+hint : think larger
+chance left : 4
+
+Guess a num between 1 to 50: 49
+hint: think smaller
+chance left : 3
+
+Guess a num between 1 to 50: 40
+hint:think larger
+chance left : 2
+
+Guess a num between 1 to 50: 12
+hint:think larger
+chance left : 1
+
+Guess a num between 1 to 50: 43
+hint:think larger
+chance left : 0
+
+GAME OVER !!!
+
+Do You wanna play again ? :['y/n']: 
+
+if yes then repeate the process 
+else done
+

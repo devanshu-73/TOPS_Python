@@ -1,0 +1,13 @@
+task : create Quiz game using Dictionary Concept
+
+take que and ans i/p from user and make 
+
+take que as key and ans as value of respective key 
+
+
+Quiz_Game={
+
+	que1:{'que':'Sun rises from ?','ans':"East"},
+	que2:{'que':"Father of The Nation ? ",'ans':"Gandhiji"}
+}
+

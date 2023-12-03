@@ -1,0 +1,15 @@
+Task : 3
+
+=============Area Finder=============
+
+	1. Circle
+	2. Triangle
+	3. Rectangle 
+
+	Enter Choice : 3
+	
+	Enter length : 
+	Enter Width : 
+	Area of Rectangle : 
+	
+	>>>>>>>>>>>>>Thank You 
