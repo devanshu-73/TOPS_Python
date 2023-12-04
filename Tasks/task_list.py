@@ -39,6 +39,6 @@
     
 # =============================================================
 # solution : 3
-str1 = "hello world"
-str2 = ''.join(reversed(str1))
-print(str2)
+# str1 = "hello world"
+# str2 = ''.join(reversed(str1))
+# print(str2)
