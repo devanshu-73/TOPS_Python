@@ -1,6 +1,4 @@
 # roll ,name,subject
-
-
 student = {}
 
 roll = int(input("Enter Roll: "))
