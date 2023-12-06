@@ -32,7 +32,12 @@
 # print("int : ",ints)
 # print("float : ",floats)
 
+
+
+
 # task
+# user choose value from list and computer pick one value from list 
+
 import random
 l1 = [12,45,343,545,5,6,4,7]
 # user = [343,545,5,6]
@@ -42,12 +47,13 @@ computer_score = 0
 
 for i in range(5):
     print(f"--> Round {i+1} Start")
+    lucky = random.choice(l1)
+    print(f"--> lucky {i+1} : ",lucky)
     print("Select Your Choice From This List : \n",l1)
     user = int(input("--> Enter Your Choice : "))
     computer = random.choice(l1)
     print("--> Computer Choice : ",computer)
-    lucky = random.choice(l1)
-    print(f"--> lucky {i+1} : ",lucky)
+
     if lucky ==  user:
         user_score+=1
         l1.remove(lucky)
@@ -69,10 +75,6 @@ else:
 print("Total User Score : ",user_score)
 print("Total Computer Score : ",computer_score)
 
-
-
-# task
-# user choose value from list and computer pick one value from list 
 
 
 
