@@ -10,5 +10,6 @@ subject = input("Enter Subject: ")
 student["roll"]=roll
 student["name"]=name
 student["subject"]=subject
+
 print(student)
  
