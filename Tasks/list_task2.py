@@ -1,5 +1,5 @@
 list1 = []
-
+sum = 0
 while True:
     list_elem = input("Enter Input....(or -> enter 'stop' for finish) : ")
     if list_elem.lower() == "stop":
@@ -8,5 +8,8 @@ while True:
         list1.append(int(list_elem))
     else:
         print("Invalid Input..")
-
-print("List1 :",list1)
+for item in list1:
+    if item % 2==0 in list1:
+        sum = sum+item
+print("sum",sum)
+# print("List1 :",list1)
