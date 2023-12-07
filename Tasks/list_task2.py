@@ -9,7 +9,8 @@ while True:
     else:
         print("Invalid Input..")
 for item in list1:
-    if item % 2 == 0 in list1:
-        sum = sum+item
+    if item % 2 == 0:
+        print("item = ",item)
+        sum = item+sum
 print("sum",sum)
 # print("List1 :",list1)
