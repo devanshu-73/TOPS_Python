@@ -40,8 +40,8 @@
 
 import random
 l1 = [12,45,343,545,5,6,4,7]
-# user = [343,545,5,6]
-# computer = [12,45,4,7]
+user_list = [343,545,5,6]
+computer_list = [12,45,4,7]
 user_score = 0
 computer_score = 0
 
@@ -49,22 +49,24 @@ for i in range(5):
     print(f"--> Round {i+1} Start")
     lucky = random.choice(l1)
     print(f"--> lucky {i+1} : ",lucky)
-    print("Select Your Choice From This List : \n",l1)
+    print("--> Computer List : ",computer_list)
+    print("Select Your Choice From This List : \n",user_list)
     user = int(input("--> Enter Your Choice : "))
-    computer = random.choice(l1)
-    print("--> Computer Choice : ",computer)
+    computer = random.choice(computer_list)
 
     if lucky ==  user:
         user_score+=1
-        l1.remove(lucky)
+        user_list.remove(lucky)
     elif lucky == computer:
         computer_score+=1
-        l1.remove(lucky)
+        computer_list.remove(lucky)
     print("----------------------------------")
     print(f"--> Round {i+1} End")
     print("--> User Score : ",user_score)
     print("--> Computer Score : ",computer_score)
     print("============================================")
+    print("--> Computer List : ",computer_list)
+    print("--> User List : ",user_list)
 
     
 if(user_score>computer_score):
