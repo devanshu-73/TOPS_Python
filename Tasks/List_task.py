@@ -90,12 +90,12 @@
 # A B C D
 # A B C D E
 
-# row = int(input("Enter Rows : "))
-# char_num = ord('A')
-# for i in range(row):
-#     for j in range(i+1):
-#         print(chr(char_num+j),end=" ")
-#     print()    
+row = int(input("Enter Rows : "))
+char_num = ord('A')
+for i in range(row):
+    for j in range(i+1):
+        print(chr(char_num+j),end=" ")
+    print()    
 
 
 #  print(string.ascii_uppercase[j], end=" ") but u have to import string module
