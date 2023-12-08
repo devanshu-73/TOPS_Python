@@ -12,11 +12,11 @@
         
 # descending order
 
-for i in range(len(li)):
-    for j in range(i,len(li)):
-        if(li[i]<li[j]):
-            li[j]=li[i]+li[j]
-            li[i]=li[j]-li[i]
-            li[j]=li[j]-li[i]
-print(li)
+# for i in range(len(li)):
+#     for j in range(i,len(li)):
+#         if(li[i]<li[j]):
+#             li[j]=li[i]+li[j]
+#             li[i]=li[j]-li[i]
+#             li[j]=li[j]-li[i]
+# print(li)
 
