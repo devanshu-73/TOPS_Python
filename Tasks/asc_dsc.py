@@ -1,6 +1,6 @@
 # ascending order
 
-li=[51,1,2,9,98,46,37,71]
+# li=[51,1,2,9,98,46,37,71]
 
 # for i in range(len(li)):
 #     for j in range(i,len(li)):
