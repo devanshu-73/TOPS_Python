@@ -1,7 +1,10 @@
+# Task - 1 Print Hello 10 Times
+ 
 # for i in range(1,11):
 #     print(i,") Hello",sep="")
 
-# Task- 2
+# Task- 2 Sum of till N positive number
+
 # sum=0
 # for i in range(1,11):
 #     n = int(input("enter number : "))
@@ -24,10 +27,12 @@
 # print("Odd :",count_odd)
 
 
-# task 4
-# table of user input 2 * 1 = 2
-
-# Task 5
+# Task 4 Pattern
+#       * * * * * 
+#       * * * * * 
+#       * * $ * * 
+#       * * * * * 
+#       * * * * * 
 
 # for i in range(5):
 #     for j in range(5):
@@ -38,7 +43,13 @@
 #             print("*",end=" ")
 #     print()
 
-# Task 6
+# Task 6 Pattern
+#       $ * * * * 
+#       * $ * * * 
+#       * * $ * * 
+#       * * * $ * 
+#       * * * * $ 
+
 # for i in range(5):
 #     for j in range(5):
 #         if(i == j):
@@ -48,20 +59,17 @@
 #             print("*",end=" ")
 #     print()
 
-# Task 8:
+# Task 8: Pattern
+#       * 
+#       * *       
+#       * * *     
+#       * * * *   
+#       * * * * * 
 
 # for i in range(1,6):
 #  { 
 #    print("* " * i)
 #  }
 
-# Task 9:
-
-# for i in range(1,5):
-#     for j in range(1,5):
-#         if(j%2 == 0):
-#             print("0")
-#         else:
-#             print("1")
     
 
