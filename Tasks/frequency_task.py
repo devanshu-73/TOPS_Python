@@ -1,5 +1,6 @@
 # Frequency Task
 # code 1
+
 sentence = input("Enter Sentence : ")
 list1 = sentence.split(" ")
 print("LIST1 :",list1)
