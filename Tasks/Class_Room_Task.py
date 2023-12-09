@@ -1,7 +1,7 @@
 # for i in range(1,11):
 #     print(i,") Hello",sep="")
 
-# Task- -2
+# Task- 2
 # sum=0
 # for i in range(1,11):
 #     n = int(input("enter number : "))
@@ -9,10 +9,8 @@
  
 # print("Addition :",sum)
 
-# n1 = 4
-# div = n1/2
-# print(div)
-# Task - 3
+# Task - 3 Odd Even Counting
+
 # count_even = 0
 # count_odd = 0
 # for i in range(10):
