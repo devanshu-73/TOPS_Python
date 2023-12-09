@@ -8,7 +8,7 @@ l1 = [12,45,5,6,4,7,343,41,73,90,78,545]
 user_list = []
 computer_list = []
 
-for i in range(int(len(l1)/2)):
+while len(user_list) < 6:
     random_element = random.choice(l1)
     if random_element not in user_list:
         user_list.append(random_element)
