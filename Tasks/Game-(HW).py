@@ -17,8 +17,8 @@ for i in l1:
     if i not in user_list:
         computer_list.append(i)
         
-print("U :",user_list)
-print("C :",computer_list)
+# print("U :",user_list)
+# print("C :",computer_list)
     
 user_score = 0
 computer_score = 0
@@ -28,9 +28,10 @@ for i in range(5):
     lucky = random.choice(l1)
     print(f"--> lucky {i+1} : ",lucky)
     print("--> Computer List : ",computer_list)
+    computer = random.choice(computer_list)
+    print("--> Computer Choice : ",computer)
     print("Select Your Choice From This List : \n",user_list)
     user = int(input("--> Enter Your Choice : "))
-    computer = random.choice(computer_list)
 
     if lucky ==  user:
         user_score+=1
