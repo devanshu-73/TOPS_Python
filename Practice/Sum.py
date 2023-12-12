@@ -9,4 +9,4 @@ for i in range(num):
 
 lis1.sort()
 
-# print(lis1[0]+lis1[-1])
+print(lis1[0]+lis1[-1])
