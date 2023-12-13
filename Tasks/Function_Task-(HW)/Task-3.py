@@ -11,9 +11,6 @@
 # 	Enter length : 
 # 	Enter Width : 
 # 	Area of Rectangle : 
-	
-# 	>>>>>>>>>>>>>Thank You 
-
 
 print("=============Area Finder=============")
 print("   1. Circle")
