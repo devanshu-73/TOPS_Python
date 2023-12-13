@@ -32,10 +32,11 @@ print("3. Multiplication")
 print("4. Division")
 print("5. Modulo")
 print("6. Exit")
+
+a = int(input("Enter No 1 : "))
+b = int(input("Enter No 2 : "))
 while True:
     choice = int(input("Enter Your Choice : "))
-    a = int(input("Enter No 1 : "))
-    b = int(input("Enter No 2 : "))
     if(choice == 1):
         print("Addition :",a+b)
     elif(choice == 2):
