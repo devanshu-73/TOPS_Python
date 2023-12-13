@@ -33,6 +33,29 @@ print("4. Division")
 print("5. Modulo")
 print("6. Exit")
 
-
-
+choice = int(input("Enter Your Choice : "))
+if(choice == 1):
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
+    print("Addition :",a+b)
+elif(choice == 2):
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
+    print("Substraction :",a-b)
+elif(choice == 3):
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
+    print("Multiplication :",a*b)
+elif(choice == 4):
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
+    print("Division :",a/b)
+elif(choice == 5):
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
+    print("Modulo :",a%b)
+elif(choice == 6):
+    exit()
+else:
+    print("U Entered Wrong Choice ")
 
