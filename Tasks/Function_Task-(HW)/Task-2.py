@@ -32,30 +32,26 @@ print("3. Multiplication")
 print("4. Division")
 print("5. Modulo")
 print("6. Exit")
+while True:
+    choice = int(input("Enter Your Choice : "))
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
+    if(choice == 1):
+        print("Addition :",a+b)
+    elif(choice == 2):
+        print("Substraction :",a-b)
+    elif(choice == 3):
+        print("Multiplication :",a*b)
+    elif(choice == 4):
+        print("Division :",a/b)
+    elif(choice == 5):
+        print("Modulo :",a%b)
+    elif(choice == 6):
+        break
+    else:
+        print("U Entered Wrong Choice ")
 
-choice = int(input("Enter Your Choice : "))
-if(choice == 1):
-    a = int(input("Enter No 1 : "))
-    b = int(input("Enter No 2 : "))
-    print("Addition :",a+b)
-elif(choice == 2):
-    a = int(input("Enter No 1 : "))
-    b = int(input("Enter No 2 : "))
-    print("Substraction :",a-b)
-elif(choice == 3):
-    a = int(input("Enter No 1 : "))
-    b = int(input("Enter No 2 : "))
-    print("Multiplication :",a*b)
-elif(choice == 4):
-    a = int(input("Enter No 1 : "))
-    b = int(input("Enter No 2 : "))
-    print("Division :",a/b)
-elif(choice == 5):
-    a = int(input("Enter No 1 : "))
-    b = int(input("Enter No 2 : "))
-    print("Modulo :",a%b)
-elif(choice == 6):
-    exit()
-else:
-    print("U Entered Wrong Choice ")
-
+    again = input("Do You Want to continue ? ['y/n']: ")
+    if(again != 'y'):
+        print("Thank You...")
+        break
