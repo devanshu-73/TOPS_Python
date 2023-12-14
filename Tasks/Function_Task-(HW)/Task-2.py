@@ -33,10 +33,12 @@ print("4. Division")
 print("5. Modulo")
 print("6. Exit")
 
-a = int(input("Enter No 1 : "))
-b = int(input("Enter No 2 : "))
-while True:
+result = True
+
+while result:
     choice = int(input("Enter Your Choice : "))
+    a = int(input("Enter No 1 : "))
+    b = int(input("Enter No 2 : "))
     if(choice == 1):
         print("Addition :",a+b)
     elif(choice == 2):
@@ -48,11 +50,11 @@ while True:
     elif(choice == 5):
         print("Modulo :",a%b)
     elif(choice == 6):
-        break
+        result=False
     else:
         print("U Entered Wrong Choice ")
 
     again = input("Do You Want to continue ? ['y/n']: ")
     if(again != 'y'):
         print("Thank You...")
-        break
+        result = False
