@@ -1,0 +1,33 @@
+Task : 2
+===========Choice Board===========
+
+	1. Addiiton
+	2. Substraction
+	3. Multiplication
+	4. Division
+	5. Modulo
+	6. Exit
+
+	Enter Your Choice : 2
+	
+	Enter two numbers : 12
+	6
+	Your Ans : 6
+
+	Do You Want to continue ? ['y/n']: 
+	
+	if n:
+	Thank You
+
+	if y
+	repeat the process 
+
+
+
+
+
+
+
+
+
+
