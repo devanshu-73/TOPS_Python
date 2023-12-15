@@ -1,14 +1,55 @@
 # Task : 1 :
-
+print("============Welcome To TOPS Restaurent==============")
+print("""
+	    Sr   Item		Price
+	    1	 Pizza		90/-
+	    2	 Burgur		89/-
+	    3	 Pani-Puri      100/-
+	    4	 Dosa		80/-
+      """)
+result = True
+while result:
+    choice = int(input("Enter Your Choice from choice :"))
+    if(choice == 1):
+        print("Your Item : Pizza")
+        quantity = int(input("Enter Quantity : "))
+        total_price = 90*quantity
+        print(f"Total Price : {total_price}")
+    elif(choice == 2):
+        print("Your Item : Burgur")
+        quantity = int(input("Enter Quantity : "))
+        total_price = 89*quantity
+        print(f"Total Price : {total_price}")
+    elif(choice == 3):
+        print("Your Item : Pani-Puri")
+        quantity = int(input("Enter Quantity : "))
+        total_price = 100*quantity
+        print(f"Total Price : {total_price}")
+    elif(choice == 4):
+        print("Your Item : Dosa")
+        quantity = int(input("Enter Quantity : "))
+        total_price = 80*quantity
+        print(f"Total Price : {total_price}")
+    else:
+        print("You Entered Wrong Input...")
+    more = input("Do You want Anything else ? ['y/n'] :")
+    if(more != 'y'):
+        print(f"""
+              Thank You...
+              Your Total Bill : {total_price} rs.
+              """)
+        result = False
+    
+        
 # Accomplish below tsk using Function : 
 
 # ============Welcome To TOPS Restaurent==============
 
-# 	Srno.	Item		Price
-# 	1	Pizza		90/-
-# 	2	Burgur		89/-
-# 	3	Pani-Puri	100/-
-# 	4	Dosa		80/-
+	# Srno.	Item		Price
+	# 1	Pizza		90/-
+	# 2	Burgur		89/-
+	# 3	Pani-Puri	100/-
+	# 4	Dosa		80/-
 
 # 	Enter Your Choice from choice : 3
 	
