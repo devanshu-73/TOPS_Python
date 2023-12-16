@@ -1,10 +1,23 @@
+# class A:
+#     def __init__(self,a,b):
+#         self.a = a
+#         self.b = b
+#     def addition(self,value):
+#         return(self.a == value.a and
+#         self.b == value.b)
+# a1 = A(12,40)
+# a2 = A(12,4)
+
+# print(a1.addition(a2))
 class A:
     def __init__(self,a,b):
         self.a = a
         self.b = b
     def addition(self,value):
-        return(self.a == value.a and
-        self.b == value.b)
+        if(self.a == value.a and self.b == value.b):
+            return True
+        else:
+            return False
 a1 = A(12,4)
 a2 = A(12,4)
 
