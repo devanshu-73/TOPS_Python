@@ -1,12 +1,31 @@
 import tkinter
 import random
 
+def play_game(player_choice):
+    l1 = ["Paper", "Rock", "Scissors"]  # Move the list inside the function
+    computer_choice = random.choice(l1)
+    result = winner_decision(player_choice, computer_choice)
+
+    user_choice_label.config(text=f"Your choice: {player_choice}")
+    computer_choice_label.config(text=f"Computer's choice: {computer_choice}")
+    result_label.config(text=f"Result: {result}")
+
+def winner_decision(player_choice, computer_choice):
+    if player_choice == computer_choice:
+        return "It's a tie!"
+    elif (player_choice == "Rock" and computer_choice == "Scissors") or \
+         (player_choice == "Paper" and computer_choice == "Rock") or \
+         (player_choice == "Scissors" and computer_choice == "Paper"):
+        return "You win!"
+    else:
+        return "Computer wins!"
+
 screen = tkinter.Tk()  # Create Screen
 screen.title("Rock, Paper, Scissors Game")
 screen.geometry("400x400")
 
 label = tkinter.Label(screen, text="Choose Rock, Paper, or Scissors:")
-label.place(x=130, y=50)  # Adjusted the position using place (Other options grid ,pack) 
+label.place(x=130, y=50)  # Adjusted the position using place (Other options grid, pack)
 
 rock_button = tkinter.Button(screen, text="Rock", command=lambda: play_game("Rock"), height=3, width=10)
 rock_button.place(x=50, y=100)
@@ -28,23 +47,3 @@ result_label.place(x=50, y=260)
 
 # Run the Tkinter event loop
 screen.mainloop()
-
-def winner_decision(player_choice, computer_choice):
-    if player_choice == computer_choice:
-        return "It's a tie!"
-    elif ((player_choice == "Rock" and computer_choice == "Scissors") or 
-         (player_choice == "Paper" and computer_choice == "Rock") or 
-         (player_choice == "Scissors" and computer_choice == "Paper")):
-        return "You win!"
-    else:
-        return "Computer wins!"
-    
-l1 = ["Paper","Rock", "Scissors"]
-
-def play_game(player_choice):
-    computer_choice = random.choice(l1)
-    result = winner_decision(player_choice, computer_choice)
-
-    user_choice_label.config(text=f"Your choice: {player_choice}")
-    computer_choice_label.config(text=f"Computer's choice: {computer_choice}")
-    result_label.config(text=f"Result: {result}")
