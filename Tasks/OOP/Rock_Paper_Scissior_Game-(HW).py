@@ -11,7 +11,7 @@ def winner_decision(player_choice, computer_choice):
     else:
         return "Computer wins!"
     
-l1 = ["Rock", "Paper", "Scissors"]
+l1 = ["Paper","Rock", "Scissors"]
 
 def play_game(player_choice):
     computer_choice = random.choice(l1)
