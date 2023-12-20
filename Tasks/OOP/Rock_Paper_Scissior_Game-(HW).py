@@ -1,7 +1,7 @@
 import tkinter
 import random
 
-def determine_winner(player_choice, computer_choice):
+def winner_decision(player_choice, computer_choice):
     if player_choice == computer_choice:
         return "It's a tie!"
     elif (player_choice == "Rock" and computer_choice == "Scissors") or \
@@ -10,10 +10,12 @@ def determine_winner(player_choice, computer_choice):
         return "You win!"
     else:
         return "Computer wins!"
+    
+l1 = ["Rock", "Paper", "Scissors"]
 
 def play_game(player_choice):
-    computer_choice = random.choice(["Rock", "Paper", "Scissors"])
-    result = determine_winner(player_choice, computer_choice)
+    computer_choice = random.choice(l1)
+    result = winner_decision(player_choice, computer_choice)
 
     user_choice_label.config(text=f"Your choice: {player_choice}")
     computer_choice_label.config(text=f"Computer's choice: {computer_choice}")
