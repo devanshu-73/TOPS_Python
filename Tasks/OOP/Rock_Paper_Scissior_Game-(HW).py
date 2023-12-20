@@ -14,8 +14,10 @@ def determine_winner(player_choice, computer_choice):
 def play_game(player_choice):
     computer_choice = random.choice(["Rock", "Paper", "Scissors"])
     result = determine_winner(player_choice, computer_choice)
-    
-    result_label.config(text=f"Computer chose {computer_choice}. {result}")
+
+    user_choice_label.config(text=f"Your choice: {player_choice}")
+    computer_choice_label.config(text=f"Computer's choice: {computer_choice}")
+    result_label.config(text=f"Result: {result}")
 
 screen = tkinter.Tk()  # Create Screen
 screen.title("Rock, Paper, Scissors Game")
@@ -33,8 +35,14 @@ paper_button.place(x=150, y=100)
 scissors_button = tkinter.Button(screen, text="Scissors", command=lambda: play_game("Scissors"), height=3, width=10)
 scissors_button.place(x=250, y=100)
 
-result_label = tkinter.Label(screen, text="")
-result_label.place(x=200, y=250)  # Adjusted the position
+user_choice_label = tkinter.Label(screen, text="Your choice: ")
+user_choice_label.place(x=50, y=200)
+
+computer_choice_label = tkinter.Label(screen, text="Computer's choice: ")
+computer_choice_label.place(x=50, y=230)
+
+result_label = tkinter.Label(screen, text="Result: ")
+result_label.place(x=50, y=260)
 
 # Run the Tkinter event loop
 screen.mainloop()
