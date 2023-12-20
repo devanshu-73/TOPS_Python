@@ -24,7 +24,7 @@ screen.title("Rock, Paper, Scissors Game")
 screen.geometry("400x400")
 
 label = tkinter.Label(screen, text="Choose Rock, Paper, or Scissors:")
-label.place(x=130, y=50)  # Adjusted the position
+label.place(x=130, y=50)  # Adjusted the position using place (Other options grid ,pack) 
 
 rock_button = tkinter.Button(screen, text="Rock", command=lambda: play_game("Rock"), height=3, width=10)
 rock_button.place(x=50, y=100)
