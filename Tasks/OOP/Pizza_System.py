@@ -1,4 +1,4 @@
-class PizzaSystem:
+class PizzaOrderSystem:
     def __init__(self):
         self.total_order_amount = 0
         self.total_payment_received = 0
@@ -59,17 +59,16 @@ class PizzaSystem:
         print("\nBye Bye!!!")
 
 
-if __name__ == "__main__":
-    pizza_system = PizzaSystem()
+pizza_system = PizzaOrderSystem()
 
-    while True:
-        print("\nWelcome to Tops Restaurant")
-        print("1. Order menu\n2. Exit")
-        choice = input("Enter your choice: ")
+while True:
+    print("\nWelcome to Tops Restaurant")
+    print("1. Order menu\n2. Exit")
+    choice = input("Enter your choice: ")
 
-        if choice == "1":
-            pizza_system.display_menu()
-            pizza_system.take_order()
-        elif choice == "2":
-            pizza_system.display_summary()
-            break
+    if choice == "1":
+        pizza_system.display_menu()
+        pizza_system.take_order()
+    elif choice == "2":
+        pizza_system.display_summary()
+        break
