@@ -52,15 +52,14 @@ class PizzaOrderSystem:
 
     def collections(self):
         print("\n----------- Pizza and pasta Bill --------------")
-        print(f"Payment received today: {self.total_payment_received}")
-        print(f"Number of pizzas sold in one shift: {self.total_pizza_sold}")
-        print(f"Number of pastas sold in one shift: {self.total_pasta_sold}")
-        print(f"Number of 1.5lt soft drink bottles given: {self.total_soft_drinks_given}")
-        print(f"Number of bruschetta given to customers: {self.total_bruschetta_given}")
-        print(
-            f"Number of chocco brownies ice cream given to customers: {self.total_chocco_brownies_given}"
-        )
-        print("\nBye Bye!!!")
+        print(f"""
+        Payment received today: {self.total_payment_received}
+        Number of pizzas sold in one shift: {self.total_pizza_sold}
+        Number of pastas sold in one shift: {self.total_pasta_sold}
+        Number of 1.5lt soft drink bottles given: {self.total_soft_drinks_given}
+        Number of bruschetta given to customers: {self.total_bruschetta_given}
+        Number of chocco brownies ice cream given to customers: {self.total_chocco_brownies_given}
+        Bye Bye!!!""")
 
 
 pizza_system = PizzaOrderSystem()
@@ -72,7 +71,7 @@ while True:
     choice = input("Enter your choice: ")
 
     if choice == "1":
-        pizza_system.display_menu()
+        pizza_system.menu()
         pizza_system.order()
     elif choice == "2":
         pizza_system.collections()
