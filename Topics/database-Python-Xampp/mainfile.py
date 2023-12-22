@@ -1,7 +1,7 @@
 import pymysql
 
 mydb= pymysql.connect(host="localhost", user="root",passwd="", database="topspython")
-mycursor=mydb.cursor()
+cursor=mydb.cursor()
 
 menu="""
 
@@ -20,7 +20,7 @@ def addOperations():
    args=(name,subject)
    query="insert into student (name,subject) values ('%s','%s')"
    
-   mycursor.execute(query % args)
+   cursor.execute(query % args)
 
    mydb.commit()
    
@@ -34,7 +34,7 @@ def updtateOperation():
    args=(name,subject,id)
    query="update student set name='%s', subject='%s', where id=%s"
    
-   mycursor.execute(query % args)
+   cursor.execute(query % args)
    mydb.commit()
    
 def searchStudent():
@@ -42,8 +42,8 @@ def searchStudent():
    query = "select * from Student where name='%s'"
    args=(name)
    
-   mycursor.execute(query % args)
-   res = mycursor.fetchone()
+   cursor.execute(query % args)
+   res = cursor.fetchone()
    
    print(res[0])
    print(res[1])
