@@ -5,7 +5,7 @@ user_score = 0
 computer_score = 0
 
 def play_game(player_choice):
-    global user_score, computer_score
+    global user_score = 0 computer_score
     l1 = ["Paper", "Rock", "Scissors"] 
     computer_choice = random.choice(l1)
     result = winner_decision(player_choice, computer_choice)
