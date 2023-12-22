@@ -20,8 +20,6 @@ mydb.commit()
 
 
 
-
-
 # Drop the topspython database
 # cursor.execute("DROP DATABASE IF EXISTS topspython")
 
