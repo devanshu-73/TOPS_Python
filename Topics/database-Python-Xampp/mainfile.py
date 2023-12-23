@@ -1,6 +1,6 @@
 import pymysql
 
-mydb= pymysql.connect(host="localhost", user="root",passwd="", database="topspython")
+mydb= pymysql.connect(host="localhost", user="root",passwd="", database="class")
 cursor=mydb.cursor()
 
 menu="""
@@ -18,7 +18,7 @@ def addOperations():
    subject=input("Enter Subject : ")
    
    args=(name,subject)
-   query="insert into student (name,subject) values ('%s','%s')"
+   query="insert into class1 (name,subject) values ('%s','%s')"
    
    cursor.execute(query % args)
 
@@ -26,20 +26,21 @@ def addOperations():
    
    print("succefully added!!")
    
-def updtateOperation():
+def updateOperation():
    id = int(input("Which student do you want to update : "))
    name=input("Enter update name : ")
    subject=input("Enter update subject : ")
    
    args=(name,subject,id)
-   query="update student set name='%s', subject='%s', where id=%s"
+   query="update class1 set name='%s', subject='%s', where id=%s"
    
    cursor.execute(query % args)
    mydb.commit()
-   
+ 
 def searchStudent():
+   
    name=input("Enter your name : ")
-   query = "select * from Student where name='%s'"
+   query = "select * from class1 where name='%s'"
    args=(name)
    
    cursor.execute(query % args)
@@ -48,6 +49,16 @@ def searchStudent():
    print(res[0])
    print(res[1])
    print(res[2])
+
+def deleteOperation():
+   id = int(input("enter the ID of the student you want to delete: "))
+   query = "delete from class1 where id = %s"
+   args = (id,)
+
+   cursor.execute(query, args)
+   mydb.commit()
+
+   print("Student deleted successfully!")
 
 status=True
 
@@ -59,13 +70,15 @@ while status:
    if choice==1:
       addOperations()
    elif choice==2:
-      updtateOperation()
+      updateOperation()
+   elif choice==3:
+      deleteOperation()
    elif choice==4:
       searchStudent()
       
    more=input("Do you want to continue? [y/n]: ")
-   
-   if more=="Y" or more=="y":
-      status=True
+    
+   if more.lower() == "y":
+      status = True
    else:
-      status=False
+      status = False
