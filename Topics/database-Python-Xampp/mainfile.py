@@ -46,9 +46,9 @@ def searchStudent():
    cursor.execute(query % args)
    res = cursor.fetchone()
    
-   print(res[0])
-   print(res[1])
-   print(res[2])
+   print("Id :",res[0])
+   print("Name :",res[1])
+   print("Subject :",res[2])
 
 def deleteOperation():
    id = int(input("enter the ID of the student you want to delete: "))
