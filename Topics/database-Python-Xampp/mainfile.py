@@ -40,10 +40,18 @@ def updateOperation():
 def searchStudent():
    
    name=input("Enter your name : ")
-   query = "select * from class1 where name='%s'"
-   args=(name)
+   # 1nd Way
+   query = f"select * from class1 where name='{name}'"
+   cursor.execute(query)
+
+   # 2rd Way : string formating with placeholder
+   # query = ("select * from class1 where name='{}'").format(name)
    
-   cursor.execute(query % args)
+   # 3nd Way
+   # query = "select * from class1 where name='%s'"
+   # args=(name)
+   # cursor.execute(query % args)
+   
    res = cursor.fetchone()
    
    print("Id :",res[0])
@@ -51,14 +59,23 @@ def searchStudent():
    print("Subject :",res[2])
 
 def deleteOperation():
+   
    id = int(input("enter the ID of the student you want to delete: "))
-   query = "delete from class1 where id = %s"
-   args = (id,)
-
-   cursor.execute(query, args)
+  
+   # 1st Way
+   query = f"delete from class1 where id ={id}"
+   cursor.execute(query)
+   
+   # 2nd Way
+   # query = "delete from class1 where id = %s"
+   # args = (id,)
+   # cursor.execute(query, args)
+   
+   # 3rd Way
+   # query = "delete from class1 where id = {}".format(id)
+   # cursor.execute(query)
+   
    mydb.commit()
-
-   print("Student deleted successfully!")
 
 status=True
 
