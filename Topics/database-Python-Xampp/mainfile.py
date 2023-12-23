@@ -74,7 +74,7 @@ def deleteOperation():
    # 3rd Way
    # query = "delete from class1 where id = {}".format(id)
    # cursor.execute(query)
-   
+   print("Student Deleted Successfully !")
    mydb.commit()
 
 status=True
