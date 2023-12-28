@@ -41,7 +41,7 @@ date = date_time.strftime("%d-%m-%Y")
 time = date_time.strftime("%Hh_%Mm")
 
 if not os.path.exists(f"vaccine_reports-{date}"):
-    os.makedirs(f"vaccine_reports-{date}")
+    os.mkdir(f"vaccine_reports-{date}")
 # else:
 #     print("Already Exists..")
     
