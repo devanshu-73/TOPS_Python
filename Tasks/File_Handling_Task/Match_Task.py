@@ -56,7 +56,7 @@ if your_choice == toss_result:
         you_bat_bowl = input("Choose Bat or Bowl first: ").lower()
 else:
     opp_bat_bowl = random.choice(["bat", "bowl"])
-    print(f"You lost the toss. {opp_team} won the toss and chose to {opp_bat_bowl}.")
+    print(f"You lost the toss. {opp_team} won the toss and choose to {opp_bat_bowl}.")
     you_bat_bowl = "bowl" if opp_bat_bowl == "bat" else "bat"
 
 if you_bat_bowl == "bat":
