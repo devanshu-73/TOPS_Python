@@ -1,12 +1,12 @@
-# n = int(input("Enter Number : "))
+n = int(input("Enter Number : "))
 
-# for i in range(n):
-#     for j in range(n):
-#         if(j<=i):
-#             print("*",end="1")
-#         else:
-#             print(" ",end="2")
-#     print()
+for i in range(n):
+    for j in range(n):
+        if(j<=i):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
 
 # n = int(input("Enter Number : "))
 
