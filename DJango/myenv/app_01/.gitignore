@@ -1,45 +1,42 @@
-# Virtual Environment
+# Ignore virtual environment
 venv/
-__pycache__/
+env/
 
-# Ignore pipenv virtual environment
-Pipfile
-Pipfile.lock
-
-# Django generated files
-*.pyc
-*.pyo
-__pycache__/
+# Ignore database file
 db.sqlite3
-*.sqlite3
-*.log
 
-# Secret key
-*.secret
-
-# IDE files
-.vscode/
-.idea/
-
-# Environment-specific files
-.env
-
-# Byte-compiled / optimized / DLL files
+# Ignore development files
 *.pyc
 *.pyo
 *.pyd
-
-# Compiled Python files
 __pycache__/
+*.log
 
-# Local development settings
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore local development settings
 local_settings.py
 
-# Media and static files
+# Ignore media and static files
 media/
 static/
 
-# Docker
+# Ignore Docker files if not used
 .dockerignore
 Dockerfile
 docker-compose.yml
+
+# Ignore other generated files
+*.secret
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+__pycache__/
+*.pyz
+*.pyz/
