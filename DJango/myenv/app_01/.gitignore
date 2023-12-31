@@ -1,0 +1,45 @@
+# Virtual Environment
+venv/
+__pycache__/
+
+# Ignore pipenv virtual environment
+Pipfile
+Pipfile.lock
+
+# Django generated files
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+*.sqlite3
+*.log
+
+# Secret key
+*.secret
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment-specific files
+.env
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled Python files
+__pycache__/
+
+# Local development settings
+local_settings.py
+
+# Media and static files
+media/
+static/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
