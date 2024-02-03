@@ -19,11 +19,11 @@ for i in range(n):
 #                 print(0,end=" ") 
 #     print()
 
-# n = int(input("Enter Number : "))
-# for i in range(n):
-#     for j in range(i + 1):
-#         print(1 if (i + j) % 2 == 0 else 0, end=" ")
-#     print()
+n = int(input("Enter Number : "))
+for i in range(n):
+    for j in range(i + 1):
+        print(1 if (i + j) % 2 == 0 else 0, end=" ")
+    print()
 
 # for i in range(5):
 #     for j in range(i+1):
