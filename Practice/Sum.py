@@ -1,5 +1,3 @@
-# Sum of largest and smallest number
-
 lis1 = []
 num = int(input("Enter How Many Element do u Want ? : "))
 
