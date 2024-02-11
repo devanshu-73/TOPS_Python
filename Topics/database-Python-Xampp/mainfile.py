@@ -77,9 +77,7 @@ def deleteOperation():
    print("Student Deleted Successfully !")
    mydb.commit()
 
-status=True
-
-while status:
+while True:
    print(menu)
    
    choice=int(input("Enter your choice : "))
@@ -95,7 +93,5 @@ while status:
       
    more=input("Do you want to continue? [y/n]: ")
     
-   if more.lower() == "y":
-      status = True
-   else:
-      status = False
+   if more.lower() != "y":
+      break
