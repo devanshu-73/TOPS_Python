@@ -11,18 +11,20 @@ soup = BeautifulSoup(response.text, "html.parser")
 # Find all <div> elements with class "CPBData"
 div_elements = soup.find_all("div", class_="CPBData")
 
-# Initialize an index for keys
-index = 1
+# Initialize an empty dictionary to store data
+data = {}
 
-# Iterate through <div> elements and extract text from <span> and <a> tags
+# Extract text from <span> tags and set the value without spaces
 for div in div_elements:
+  for span in div.find_all("span"):
+    text = span.get_text(strip=True)
+    next_sibling = span.find_next_sibling()
+    next_text = next_sibling.get_text(strip=True) if next_sibling else None
 
-    # Find all <span> and <a> tags within the <div> element
-    spans = div.find_all("span")
-    links = div.find_all("a")
+    if not data.get('name'):
+      data['name'] = text
+    elif text:
+      data[text] = next_text.strip() if next_text else ""  # Remove leading/trailing spaces and set empty string if next_text is None
 
-    # Print text from <span> tags
-    for span in spans:
-        text = span.get_text(strip=True)
-        text = text.replace(" ", "")  # Remove spaces
-        print( text) 
+# Print the data dictionary with space-removed values
+print(data)
